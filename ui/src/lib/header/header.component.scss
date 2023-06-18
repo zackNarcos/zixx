@@ -1,0 +1,39 @@
+.container {
+    color: white;
+    background: url("../../../../src/assets/images/header-bar.png") no-repeat center;
+    padding: 10px 10px;
+    width: 100%;
+    background-size: contain;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 29px;
+    //hover
+    &:hover {
+        cursor: pointer;
+        background: url("../../../../src/assets/images/logo-hover.png") no-repeat center;
+    }
+}
+
+.link-text {
+    font-weight: bold;
+    color: var(--primary);
+    cursor: pointer;
+    &:hover {
+        color: var(--textWhite);
+        border-bottom: solid 2px var(--primary);
+    }
+}
+
+.active {
+    .link-text{
+        color: var(--textWhite);
+        border-bottom: solid 2px var(--primary);
+    }
+}

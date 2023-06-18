@@ -1,0 +1,15 @@
+<div class="container">
+    <span class="logo" >ZIXX MOJO</span>
+    <ul class="nav">
+        <li class="nav-item" *ngFor="let menuItem of menuItems">
+            <a class="nav-link fs-5 text-uppercase"
+               aria-current="page"
+               [routerLink]="menuItem.link"
+               routerLinkActive="active"
+            >
+                <span class="link-text">{{menuItem.label}}</span>
+            </a>
+        </li>
+    </ul>
+    <zixx-fe-social></zixx-fe-social>
+</div>

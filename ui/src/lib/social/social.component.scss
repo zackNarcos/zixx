@@ -1,0 +1,8 @@
+.nav-link {
+    cursor: pointer;
+    color: var(--textWhite);
+
+    &:hover {
+        color: var(--primary);
+    }
+}
